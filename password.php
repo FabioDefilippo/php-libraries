@@ -14,7 +14,7 @@ function verify_passwords(string $passwordI, string $passwordS)
  return password_verify($passwordI, $passwordS);
 }
 
-function encrypt_password(string $password, string $algo, $cost)
+function encrypt_password(string $password, string $algo = PASSWORD_BCRYPT, $cost = 12)
 {
  $options = [
     'cost' => $cost,
