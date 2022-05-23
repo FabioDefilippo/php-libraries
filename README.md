@@ -3,7 +3,8 @@ These php files contain functions to manage sessions, tokens and much more
 
 ## Documentation
 ### Token
-- generate_hex: algos are
+#### generate_hex:
+	 algos are
 <ul>
     <li>md2</li>
     <li>md4</li>
@@ -53,3 +54,11 @@ These php files contain functions to manage sessions, tokens and much more
 <hr />
 
 ### Password
+#### encrypt_password:
+	constants are
+<ul>
+<li>PASSWORD_DEFAULT</li>
+<li>PASSWORD_BCRYPT</li>
+<li>PASSWORD_ARGON2I</li>
+<li>PASSWORD_ARGON2ID</li>
+</ul>
