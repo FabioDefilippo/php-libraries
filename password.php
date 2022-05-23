@@ -1,5 +1,5 @@
 <?php
-function generate(string $characters, $number)
+function generate_string(string $characters, $number)
 {
   $password = "";
  for($I = 0; $I < $number; $I++)
@@ -9,8 +9,16 @@ function generate(string $characters, $number)
  return $password;
 }
 
-function compare(string $passwordI, string $passwordS)
+function verify_passwords(string $passwordI, string $passwordS)
 {
  return password_verify($passwordI, $passwordS);
+}
+
+function encrypt_password(string $password, string $algo, $cost)
+{
+ $options = [
+    'cost' => $cost,
+];
+ return password_hash($password, $algo, $options);
 }
 ?>
