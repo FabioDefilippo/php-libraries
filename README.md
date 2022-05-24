@@ -1,6 +1,12 @@
 # php-libraries
 These php files contain functions to manage sessions, tokens and much more
 
+You can clone this repository or include these php files using <strong>allow_url_include</strong> in php.ini file
+example adding inside php.ini file
+```
+allow_url_include = On
+```
+
 ## Documentation
 ### Token
 #### generate_hex:
