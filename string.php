@@ -7,7 +7,7 @@ function string_check(string $text, string $regex)
  }
  else
  {
-  return false!
+  return false;
  }
 }
 ?>
