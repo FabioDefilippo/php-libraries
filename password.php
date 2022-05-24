@@ -1,7 +1,7 @@
 <?php
 function generate_string(string $characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!?+-", $number)
 {
-  $password = "";
+ $password = "";
  for($I = 0; $I < $number; $I++)
  {
   $password .= $characters[rand(0, strlen($characters) - 1)];
@@ -9,16 +9,16 @@ function generate_string(string $characters = "abcdefghijklmnopqrstuvwxyzABCDEFG
  return $password;
 }
 
-function verify_passwords(string $passwordI, string $passwordS)
+function verify_passwords(string $passwordInput, string $passwordStored)
 {
- return password_verify($passwordI, $passwordS);
+ return password_verify($passwordInput, $passwordStored);
 }
 
 function encrypt_password(string $password, string $algo = PASSWORD_BCRYPT, $cost = 12)
 {
  $options = [
     'cost' => $cost,
-];
+ ];
  return password_hash($password, $algo, $options);
 }
 ?>
