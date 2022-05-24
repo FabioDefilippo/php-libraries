@@ -1,5 +1,5 @@
 <?php
-function generate_string(string $characters, $number)
+function generate_string(string $characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!?+-", $number)
 {
   $password = "";
  for($I = 0; $I < $number; $I++)
