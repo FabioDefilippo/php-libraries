@@ -2,10 +2,11 @@
 These php files contain functions to manage sessions, tokens and much more
 
 You can clone this repository or include these php files using <strong>allow_url_include</strong> in php.ini file
-example adding inside php.ini file
+example adding inside php.ini file:
 ```
 allow_url_include = On
 ```
+so, You can use <strong>incude</strong> to add these php files in your project.
 
 ## Documentation
 ### Token
