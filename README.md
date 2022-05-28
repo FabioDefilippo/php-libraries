@@ -11,8 +11,24 @@ allow_url_include = On
 so, You can use <strong>incude</strong> to add these php files in your project.
 
 ## Documentation
+
+### Password
+#### generate_string($number, string $characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!?+-");
+#### verify_passwords(string $passwordInput, string $passwordStored);
+#### encrypt_password(string $password, string $algo = PASSWORD_BCRYPT, $cost = 12);
+	algo constants are
+<ul>
+<li>PASSWORD_DEFAULT</li>
+<li>PASSWORD_BCRYPT</li>
+<li>PASSWORD_ARGON2I</li>
+<li>PASSWORD_ARGON2ID</li>
+</ul>
+<hr />
+
 ### String
 #### string_check(string $text, string $regex = '/^[a-zA-Z0-9]+$/');
+<hr />
+
 ### Token
 #### compare_tokens(string $tokenClient, string $tokenServer, string &$err_message = "");
 #### generate_hex(string $salt, string $algo = 'sha256', $number = 63);
@@ -64,15 +80,3 @@ so, You can use <strong>incude</strong> to add these php files in your project.
     <li>haval256,5</li>
 </ul>
 <hr />
-
-### Password
-#### generate_string($number, string $characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!?+-");
-#### verify_passwords(string $passwordInput, string $passwordStored);
-#### encrypt_password(string $password, string $algo = PASSWORD_BCRYPT, $cost = 12);
-	algo constants are
-<ul>
-<li>PASSWORD_DEFAULT</li>
-<li>PASSWORD_BCRYPT</li>
-<li>PASSWORD_ARGON2I</li>
-<li>PASSWORD_ARGON2ID</li>
-</ul>
