@@ -63,8 +63,10 @@ so, You can use <strong>incude</strong> to add these php files in your project.
 <hr />
 
 ### Password
-#### encrypt_password:
-	constants are
+#### generate_string($number, string $characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!?+-");
+#### verify_passwords(string $passwordInput, string $passwordStored);
+#### encrypt_password(string $password, string $algo = PASSWORD_BCRYPT, $cost = 12);
+	algo constants are
 <ul>
 <li>PASSWORD_DEFAULT</li>
 <li>PASSWORD_BCRYPT</li>
