@@ -11,8 +11,11 @@ allow_url_include = On
 so, You can use <strong>incude</strong> to add these php files in your project.
 
 ## Documentation
+### String
+#### string_check(string $text, string $regex = '/^[a-zA-Z0-9]+$/');
 ### Token
-#### generate_hex:
+#### compare_tokens(string $tokenClient, string $tokenServer, string &$err_message = "");
+#### generate_hex(string $salt, string $algo = 'sha256', $number = 63);
 	 algos are
 <ul>
     <li>md2</li>
